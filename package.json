@@ -15,6 +15,7 @@
     "@nuxt/ui": "^2.20.0",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@primevue/themes": "^4.2.5",
     "@vueuse/nuxt": "^12.2.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
@@ -23,11 +24,13 @@
     "nuxt-typed-router": "^3.7.2",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
+    "primevue": "^4.2.5",
     "tailwindcss": "^3.4.17",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@primevue/nuxt-module": "^4.2.5",
     "nuxt-file-storage": "^0.2.9"
   }
 }
