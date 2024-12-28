@@ -384,32 +384,85 @@
       </div>
     </div>
 
+    <div class="bg-white h-full w-screen"></div>
+
     <div
       class="flex bg-white h-full w-screen items-center justify-center my-10"
     >
-      <div class="flex flex-col items-center justify-center text-center">
+      <div class="flex flex-col w-full max-w-6xl">
         <div
-          class="flex items-center justify-center text-center font-bold text-3xl mb-4"
+          class="flex flex-row bg-white border-2 border-gray-200 rounded-lg px-4"
         >
-          <h1>Часто задаваемые вопросы</h1>
+          <div
+            class="flex-1 flex flex-col items-center justify-center text-center p-8"
+          >
+            <div class="flex flex-col items-center">
+              <div class="font-bold">Кирилл</div>
+              <div class="text-sm mb-1">Тех. Поддержка</div>
+            </div>
+          </div>
+          <div class="flex-1 flex flex-col justify-center p-8">
+            <h1 class="font-bold text-3xl mb-1">Кто может быть наследником?</h1>
+            <p class="mt-1">
+              Наследниками могут быть как родственники (по закону), так и лица,
+              указанные в завещании. Круг наследников зависит от степени родства
+              и наличия завещания.
+            </p>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="flex">
-          <div class="bg-gray-200 border rounded-lg px-4 py-2 flex flex-col">
-            <div class="flex flex-col items-start">
-              <div class="flex flex-col">
-                <div class="font-bold">Кирилл</div>
-                <div class="font-bold">Кто может быть наследником?</div>
-                <div class="text-sm">Тех.Поддержка</div>
+    <div
+      class="flex bg-white h-full w-screen items-center justify-center my-10"
+    >
+      <div class="flex flex-col w-full max-w-6xl">
+        <div class="flex flex-row">
+          <div class="flex-1 relative">
+            <img
+              src="~/public/buildings.jpg"
+              alt="img"
+              class="h-full w-full object-cover"
+            />
+            <div
+              class="absolute top-0 left-0 bg-black bg-opacity-50 w-full h-full flex flex-col text-white p-8"
+            >
+              <h1 class="font-bold text-3xl mb-4">Связаться с нами</h1>
+              <p class="text-xl mb-2">
+                ЕСТЬ ПРОБЛЕМЫ ? ПРОСТО НАПШИТЕ НАМ СВОЕ СООБЩЕНИЕ!
+              </p>
+              <div class="mb-4">
+                <p>Улица: Ул.Пушкина ул.42</p>
+                <p>Телефон: 8 (900) 000 00-00</p>
+              </div>
+              <div>
+                <p>Соц. Сети</p>
               </div>
             </div>
-            <div class="flex flex-col mt-4">
-              <div class="text-sm">
-                Наследниками могут быть как родственники (по закону), так и
-                лица, указанные в завещании. Круг наследников зависит от степени
-                родства и наличия завещания.
-              </div>
-            </div>
+          </div>
+          <div class="flex-1 flex flex-col justify-center p-8">
+            <h1 class="font-bold text-3xl mb-4">Связаться</h1>
+            <p>
+              У вас есть вопрос? Заполните форму ниже, чтобы связаться с нашей
+              командой.
+            </p>
+            <form>
+              <p>
+                <b>Ваша почта:</b><br />
+                <input type="text" size="40" class="border-2 border-black" />
+              </p>
+              <p>
+                <b>Имя:</b><br />
+                <input
+                  type="text"
+                  size="40"
+                  class="border-2 border-black mb-4"
+                />
+              </p>
+              <p class="bg-black text-white rounded-lg w-32 text-center">
+                <button>Отправить</button>
+              </p>
+            </form>
           </div>
         </div>
       </div>
