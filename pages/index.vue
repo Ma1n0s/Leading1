@@ -1,143 +1,141 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+import ModalAppl from '@/components/ModalAppl.vue'; 
+
+const isModalOpen = ref(false);
+
+const openModal = () => {
+  isModalOpen.value = true; 
+};
+</script>
 
 <template>
+  
   <div class="overflow-hidden">
-    <div class="flex bg-gray-200 h-full w-screen px-16">
-      <div
-        class="flex flex-col items-start justify-center text-5xl text-black w-1/2 pr-8"
-      >
-        <h1 class="mb-8">Наследственные дела и споры</h1>
-        <div class="mt-4 text-2xl">
-          <span class="m-8">
-            В нашем юридическом центре мы понимаем, что вопросы наследства могут
-            быть сложными и эмоционально трудными. Наша команда опытных юристов
-            готова предоставить вам профессиональную помощь в решении
-            наследственных дел и споров. Мы предлагаем комплексные консультации,
-            поддержку на всех этапах процесса и защиту ваших прав. Свяжитесь с
-            нами сегодня, чтобы обсудить вашу ситуацию и получить
-            квалифицированную юридическую помощь.
-          </span>
-          <br />
-          <button
-            class="my-8 bg-red-500 border border-white rounded-3xl text-white p-3"
-          >
-            УЗНАТЬ ПОБОЛЬШЕ
-          </button>
-        </div>
-      </div>
-      <div class="w-1/2">
-        <img src="~/public/123.png" alt="img" class="object-cover" />
-      </div>
-    </div>
-
-    <div class="flex bg-white h-full w-screen justify-between px-16">
-      <div class="w-1/2 flex flex-col items-start text-black">
-        <img
-          src="~/public/pngwingcom.png"
-          alt="img"
-          class="object-cover mb-4"
-        />
-        <h1 class="text-2xl text-black mt-4">Оформление наследства</h1>
-        <p class="mt-2">
-          Подготовка необходимых документов для оформления наследства
-          (заявления, свидетельства и т.д.).
-        </p>
-        <p class="mt-2">
-          Представление интересов клиентов в нотариальных конторах.
-        </p>
-        <h1 class="text-2xl text-black mt-4">Оформление наследства</h1>
-        <p class="mt-2">
-          Консультации и помощь в делах по оспариванию завещаний
-        </p>
-        <p class="mt-2">Представительство в суде при оспаривании завещаний.</p>
-        <h1 class="text-2xl text-black mt-4">Помощь в сборе документов</h1>
-        <p class="mt-2">
-          Сбор необходимых документов для оформления наследства (свидетельства о
-          смерти, документы на имущество и т.д.).
-        </p>
-        <p class="mt-2">
-          Проверка правоустанавливающих документов на имущество.
-        </p>
-      </div>
-      <div class="text-black">
-        <h2 class="items-center text-center justify-center text-black text-2xl">
-          Широкий выбор услуг, которые мы предлагаем
-        </h2>
-        <div class="text-black mt-4">
-          <h1 class="text-2xl text-black mt-4">Оформление наследства</h1>
-          <p class="mt-2">
-            Подготовка необходимых документов для оформления наследства
-            (заявления, свидетельства и т.д.).
-          </p>
-          <p class="mt-2">
-            Представление интересов клиентов в нотариальных конторах.
-          </p>
-          <h1 class="text-2xl text-black mt-4">Оформление наследства</h1>
-          <p class="mt-2">
-            Консультации и помощь в делах по оспариванию завещаний
-          </p>
-          <p class="mt-2">
-            Представительство в суде при оспаривании завещаний.
-          </p>
-          <h1 class="text-2xl text-black mt-4">Помощь в сборе документов</h1>
-          <p class="mt-2">
-            Сбор необходимых документов для оформления наследства (свидетельства
-            о смерти, документы на имущество и т.д.).
-          </p>
-          <p class="mt-2">
-            Проверка правоустанавливающих документов на имущество.
-          </p>
-        </div>
-        <div>
-          <img src="~/public/WorkWoman.jpeg" alt="img" class="" />
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="flex bg-white h-screen w-screen items-center justify-between px-16"
-    >
-      <div class="w-full text-2xl text-black">
-        <div class="flex flex-col">
-          <div class="grid grid-cols-2 gap-8">
-            <div class="flex-row initial bg-red-200 border rounded-lg mb-8">
-              <h1 class="text-center font-bold">Наша миссия</h1>
-              <div class="px-24 mb-32">
-                обеспечить качественную и доступную юридическую поддержку в
-                области наследственных дел и споров
-              </div>
-              <div class="flex justify-end">
-                <img
-                  src="~/public/MainSticker.png"
-                  alt="img"
-                  class="object-cover"
-                />
-              </div>
+    <div class="flex flex-col md:flex-row bg-gray-200 h-full w-screen px-4 md:px-32">
+    <div class="flex flex-col items-start justify-center text-3xl md:text-5xl text-black w-full md:w-1/2 pr-4 md:pr-8">
+        <h1 class="mb-4 font-bold mt-10">Наследственные дела и споры</h1>
+        <div class="mt-4 text-lg md:text-2xl">
+            <div class="m-4 md:m-8">
+                В нашем юридическом центре мы понимаем, что вопросы наследства могут
+                быть сложными и эмоционально трудными. Наша команда опытных юристов
+                готова предоставить вам профессиональную помощь в решении
+                наследственных дел и споров. Мы предлагаем комплексные консультации,
+                поддержку на всех этапах процесса и защиту ваших прав. Свяжитесь с
+                нами сегодня, чтобы обсудить вашу ситуацию и получить
+                квалифицированную юридическую помощь.
             </div>
+            <br />
+            <button class="mx-auto md:ml-12 my-6 bg-red-500 border border-white rounded-3xl text-white p-3 text-lg md:text-xl">
+                УЗНАТЬ ПОБОЛЬШЕ
+            </button>
+        </div>
+    </div>
+    <div class="w-full md:w-1/2 flex items-center justify-center order-1 md:order-2">
+        <img src="~/public/123.png" alt="img" class="object-cover mt-6 w-full h-auto" />
+    </div>
+</div>
 
-            <div
-              class="flex flex-col initial bg-amber-100 border rounded-lg transform translate-y-1/2"
-            >
-              <h1 class="text-center font-bold">Наша стратегия</h1>
-              <div class="px-24 mb-32">
-                Мы предлагаем индивидуальный подход к каждому наследственному
-                делу, обеспечивая тщательный анализ и прозрачность на всех
-                этапах. Наша цель — находить мирные решения споров, минимизируя
-                конфликты и защищая ваши права.
-              </div>
-              <div class="flex justify-end">
-                <!-- <img
-                  src="~/public/Comment.png"
-                  alt="img"
-                  class="object-cover"
-                /> -->
-              </div>
+
+
+<div class="flex flex-col items-center bg-white">
+    <h2 class="bg-white text-center text-gray-800 my-8 font-black text-2xl md:text-3xl mb-4">
+        Широкий выбор услуг, которые мы предлагаем
+    </h2>
+    <div class="flex flex-col md:flex-row bg-white w-full max-w-5xl justify-between px-4 md:px-8">
+        <div class="flex flex-col items-start text-black w-full md:w-1/2">
+            <img src="~/public/pngwingcom.png" alt="img" class="object-cover mb-4 w-full h-auto" />
+            <div class="ml-0 md:ml-8">
+                <h1 class="text-xl md:text-2xl text-black mt-2">Оформление наследства</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Подготовка необходимых документов для оформления наследства (заявления, свидетельства и т.д.).</li>
+                    <li class="mt-1">Представление интересов клиентов в нотариальных конторах.</li>
+                </ul>
+                <h1 class="text-xl md:text-2xl text-black mt-4">Оспаривание завещаний</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Консультации и помощь в делах по оспариванию завещаний.</li>
+                    <li class="mt-1">Представительство в суде при оспаривании завещаний.</li>
+                </ul>
+                <h1 class="text-xl md:text-2xl text-black mt-4">Помощь в сборе документов</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Сбор необходимых документов для оформления наследства (свидетельства о смерти, документы на имущество и т.д.).</li>
+                    <li class="mt-1">Проверка правоустанавливающих документов на имущество.</li>
+                </ul>
+                <h1 class="text-xl md:text-2xl text-black mt-4">Разработка стратегии наследования</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Консультирование по оптимизации наследственных планов для минимизации налоговых последствий.</li>
+                    <li class="mt-1">Помощь в составлении наследственного договора.</li>
+                </ul>
             </div>
+        </div>
+        <div class="flex flex-col items-center w-full md:w-1/2">
+            <div class="text-black mt-4">
+                <h1 class="text-xl md:text-2xl text-black mt-4">Оформление наследства</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Подготовка необходимых документов для оформления наследства (заявления, свидетельства и т.д.).</li>
+                    <li class="mt-1">Представление интересов клиентов в нотариальных конторах.</li>
+                </ul>
+                <h1 class="text-xl md:text-2xl text-black mt-4">Оспаривание завещаний</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Консультации и помощь в делах по оспариванию завещаний.</li>
+                    <li class="mt-1">Представительство в суде при оспаривании завещаний.</li>
+                </ul>
+                <h1 class="text-xl md:text-2xl text-black mt-4">Помощь в сборе документов</h1>
+                <ul class="list-disc list-inside">
+                    <li class="mt-1">Сбор необходимых документов для оформления наследства (свидетельства о смерти, документы на имущество и т.д.).</li>
+                    <li class="mt-1">Проверка правоустанавливающих документов на имущество.</li>
+                </ul>
+            </div>
+            <div>
+                <img src="~/public/WorkWoman.jpeg" alt="img" class="mt-4 w-72 h-auto" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="flex flex-col md:flex-row bg-white h-screen w-screen items-center justify-between px-4 md:px-16">
+  <div class="w-full text-2xl text-black">
+    <div class="flex flex-col">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex flex-col bg-red-200 border rounded-lg mb-8 p-4">
+          <h1 class="text-center font-bold">Наша миссия</h1>
+          <div class="px-4 mb-4">
+            обеспечить качественную и доступную юридическую поддержку в
+            области наследственных дел и споров
+          </div>
+          <div class="flex justify-end">
+            <img
+              src="~/public/MainSticker.png"
+              alt="img"
+              class="object-cover w-24 h-24 md:w-auto md:h-auto"
+            />
           </div>
         </div>
-        <div class="flex flex-col">
+
+        <div class="flex flex-col bg-amber-100 border rounded-lg p-4">
+          <h1 class="text-center font-bold">Наша стратегия</h1>
+          <div class="px-4 mb-4">
+            Мы предлагаем индивидуальный подход к каждому наследственному
+            делу, обеспечивая тщательный анализ и прозрачность на всех
+            этапах. Наша цель — находить мирные решения споров, минимизируя
+            конфликты и защищая ваши права.
+          </div>
+          <!-- <div class="flex justify-end">
+            <img
+              src="~/public/Comment.png"
+              alt="img"
+              class="object-cover"
+            />
+          </div> -->
+        </div>
+
+        <div class="flex items-center mt-8 col-span-1 md:col-span-2"> 
           <div class="text-9xl">❟❟</div>
-          <div class="flex flex-col">
+          <div class="flex flex-col ml-4">
             Компания ЮДЛ демонстрирует высокую эффективность благодаря слаженной
             команде профессионалов, современным технологиям и индивидуальному
             подходу к каждому клиенту, что позволяет достигать отличных
@@ -146,8 +144,15 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
 
     <div class="grid grid-cols-3 gap-x-3 h-full w-screen px-96 bg-gray-200 text-black">
+      <div>
+        <img src="~/public/office.jpg" alt="img" class="" />
+        </div>
       <div class="flex items-center justify-center">
         <div class="bg-white border rounded-lg w-60 h-full">
           <div class="flex items-center justify-center mt-6">
@@ -237,103 +242,64 @@
           Нужна помощь компетентного эксперта? Закажите обратный звонок сегодня
           и получите бесплатную консультацию.
         </div>
+            <div>
+        <ModalAppl :isOpen="isModalOpen" @close="isModalOpen = false" />
+
         <div>
-          <button class="bg-black text-white px-4 py-2 rounded-lg">
+          <button @click="openModal" class="bg-black text-white px-4 py-2 rounded-lg">
             Заказать звонок
           </button>
         </div>
       </div>
+      </div>
     </div>
 
-    <div class="flex bg-white h-full w-screen items-end justify-end my-10 p-16">
-      <div class="flex flex-col items-end justify-end text-end">
-        <div class="flex items-start justify-start">
-          <img src="" alt="img" class="" />
-          <div class="flex items-end justify-end w-full text-3xl">
-            <h1 class="ml-auto">Наши достижения</h1>
-          </div>
+    <div class="flex bg-white h-full w-screen items-end justify-end my-10 p-16 text-black">
+  <div class="flex flex-col items-start justify-end text-start">
+    <img src="~/public/group-people-working.jpg" alt="img" class="w-56 h-32 static" />
+    <div class="flex items-end justify-end w-full text-3xl">
+      <h1 class="ml-auto">Наши достижения</h1>
+    </div>
+  </div>
+  <div class="flex px-20">
+    <div class="flex flex-row px-10">
+      В нашей компании мы гордимся теми успехами, которые достигли за
+      время своего существования. Ниже представлены ключевые достижения,
+      которые подтверждают нашу репутацию и высокий уровень работы.
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto items-center">
+        <img src="~/public/userALL.png" alt="img" class="mb-2 w-16 h-16" />
+        <div class="flex flex-col items-center">
+          <div class="text-center break-words overflow-hidden">Клиенты</div>
+          <div class="text-lg font-bold break-words overflow-hidden">10,813</div>
         </div>
-        <div class="flex px-20">
-          <div class="flex flex-row px-10">
-            В нашей компании мы гордимся теми успехами, которые достигли за
-            время своего существования. Ниже представлены ключевые достижения,
-            которые подтверждают нашу репутацию и высокий уровень работы.
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div
-              class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto"
-            >
-              <img
-                src="~/public/userALL.png"
-                alt="img"
-                class="mb-2 w-full h-auto"
-              />
-              <div class="flex flex-col items-center">
-                <div class="text-center break-words overflow-hidden">
-                  Клиенты
-                </div>
-                <div class="text-lg font-bold break-words overflow-hidden">
-                  10,813
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto"
-            >
-              <img
-                src="~/public/feedb.png"
-                alt="img"
-                class="mb-2 w-full h-auto"
-              />
-              <div
-                class="flex flex-col items-center justify-center text-center"
-              >
-                <div class="text-center break-words overflow-hidden">
-                  Положительных отзывов
-                </div>
-                <div class="text-lg font-bold break-words overflow-hidden">
-                  8345
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto"
-            >
-              <img
-                src="~/public/pngwing.png"
-                alt="img"
-                class="mb-2 w-full h-auto"
-              />
-              <div class="flex flex-col items-center text-center">
-                <div class="text-center break-words overflow-hidden">
-                  Привлеченные эксперты
-                </div>
-                <div class="text-lg font-bold break-words overflow-hidden">
-                  2342
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto"
-            >
-              <img
-                src="~/public/pngwing1.png"
-                alt="img"
-                class="mb-2 w-full h-auto"
-              />
-              <div class="flex flex-col items-center text-center">
-                <div class="text-center break-words overflow-hidden">
-                  Благодарственных писем
-                </div>
-                <div class="text-lg font-bold break-words overflow-hidden">
-                  150
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto items-center">
+        <img src="~/public/feedb.png" alt="img" class="mb-2 w-16 h-16" />
+        <div class="flex flex-col items-center justify-center text-center">
+          <div class="text-center break-words overflow-hidden">Положительных отзывов</div>
+          <div class="text-lg font-bold break-words overflow-hidden">8345</div>
+        </div>
+      </div>
+      <div class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto items-center">
+        <img src="~/public/pngwing.png" alt="img" class="mb-2 w-16 h-16" />
+        <div class="flex flex-col items-center text-center">
+          <div class="text-center break-words overflow-hidden">Привлеченные эксперты</div>
+          <div class="text-lg font-bold break-words overflow-hidden">2342</div>
+        </div>
+      </div>
+      <div class="flex flex-col bg-gray-400 border rounded-lg p-4 w-full h-auto items-center">
+        <img src="~/public/pngwing1.png" alt="img" class="mb-2 w-16 h-16" />
+        <div class="flex flex-col items-center text-center">
+          <div class="text-center break-words overflow-hidden">Благодарственных писем</div>
+          <div class="text-lg font-bold break-words overflow-hidden">150</div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
 
     <div
       class="flex bg-white h-full w-screen items-center justify-center my-10"
@@ -453,34 +419,29 @@
       </div>
     </div>
 
-    <div
-      class="flex bg-white h-full w-screen items-center justify-center my-10 text-black"
-    >
-      <div class="flex flex-col w-full max-w-6xl">
-        <div
-          class="flex flex-row bg-white border-2 border-gray-200 rounded-lg px-4"
-        >
-          <div
-            class="flex flex-col items-center justify-center text-center p-8"
-          >
-            <div class="flex flex-col text-left">
-              <div class="font-bold">Кирилл</div>
-              <div class="text-sm mb-1">Тех. Поддержка</div>
-            </div>
-          </div>
-          <div class="flex-none flex flex-col justify-center p-8">
-            <h1 class="font-bold text-3xl mb-1 mx-auto">
-              Кто может быть наследником?
-            </h1>
-            <p class="mt-1 max-w-md mx-auto">
-              Наследниками могут быть как родственники (по закону), так и лица,
-              указанные в завещании. Круг наследников зависит от степени родства
-              и наличия завещания.
-            </p>
-          </div>
+<div class="flex bg-white h-full w-screen items-center justify-center my-10 text-black">
+  <div class="flex flex-col w-full max-w-6xl">
+    <div class="flex flex-row bg-white border-2 border-gray-200 rounded-lg px-4">
+      <div class="flex flex-col items-center justify-center text-center p-4 w-1/4">
+        <div class="flex flex-col text-left">
+          <div class="font-bold">Кирилл</div>
+          <div class="text-sm mb-1">Тех. Поддержка</div>
         </div>
       </div>
+      <div class="flex-grow flex flex-col justify-center p-4">
+        <h1 class="font-bold text-3xl mb-1">
+          Кто может быть наследником?
+        </h1>
+        <p class="mt-1 max-w-md">
+          Наследниками могут быть как родственники (по закону), так и лица,
+          указанные в завещании. Круг наследников зависит от степени родства
+          и наличия завещания.
+        </p>
+      </div>
     </div>
+  </div>
+</div>
+
 
     <div
       class="flex bg-white h-full w-screen items-center justify-center my-10"
