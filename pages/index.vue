@@ -31,7 +31,7 @@
     </div>
 
     <div class="flex bg-white h-full w-screen justify-between px-16">
-      <div class="w-1/2 flex flex-col items-start">
+      <div class="w-1/2 flex flex-col items-start text-black">
         <img
           src="~/public/pngwingcom.png"
           alt="img"
@@ -147,7 +147,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-x-3 h-full w-screen px-96 bg-gray-200">
+    <div class="grid grid-cols-3 gap-x-3 h-full w-screen px-96 bg-gray-200 text-black">
       <div class="flex items-center justify-center">
         <div class="bg-white border rounded-lg w-60 h-full">
           <div class="flex items-center justify-center mt-6">
@@ -227,7 +227,7 @@
     </div>
 
     <div
-      class="flex bg-white h-full w-screen items-center justify-center my-10 p-16"
+      class="flex bg-white h-full w-screen items-center justify-center my-10 p-16 text-black"
     >
       <div class="flex flex-col items-center justify-center text-center">
         <div class="font-bold text-2xl mb-4">
@@ -338,7 +338,7 @@
     <div
       class="flex bg-white h-full w-screen items-center justify-center my-10"
     >
-      <div class="flex flex-col items-center justify-center text-center">
+      <div class="flex flex-col items-center justify-center text-center text-black">
         <div
           class="flex items-center justify-center text-center font-bold text-3xl"
         >
@@ -393,7 +393,7 @@
     <div
       class="flex bg-white h-full w-screen items-center justify-center my-10"
     >
-      <div class="flex flex-col items-center justify-center text-center">
+      <div class="flex flex-col items-center justify-center text-center text-black">
         <div
           class="flex flex-col items-start justify-start text-left font-bold mb-4"
         >
@@ -454,7 +454,7 @@
     </div>
 
     <div
-      class="flex bg-white h-full w-screen items-center justify-center my-10"
+      class="flex bg-white h-full w-screen items-center justify-center my-10 text-black"
     >
       <div class="flex flex-col w-full max-w-6xl">
         <div
@@ -509,7 +509,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-1 flex flex-col justify-center p-8">
+          <div class="flex-1 flex flex-col justify-center p-8 text-black">
             <h1 class="font-bold text-3xl mb-4">Связаться</h1>
             <p>
               У вас есть вопрос? Заполните форму ниже, чтобы связаться с нашей
