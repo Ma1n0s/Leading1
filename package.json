@@ -16,6 +16,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@primevue/themes": "^4.2.5",
+    "@vueuse/head": "^2.0.0",
     "@vueuse/nuxt": "^12.2.0",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",

@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <!-- <header>
     <nav class="flex justify-center space-x-4">
       <a
         href="/"
@@ -22,7 +22,7 @@
         >Отчеты</a
       >
     </nav>
-  </header>
+  </header> -->
   <main>
     <slot></slot>
   </main>
