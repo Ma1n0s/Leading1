@@ -204,8 +204,8 @@
                 </div>
             </div>
 
-
-
+<!-- 
+1 -->
     </div>
 
     <footer class="bg-gray-800 text-white py-6 mt-6">
