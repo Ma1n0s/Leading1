@@ -43,6 +43,8 @@
       </div>
     </div>
 
-    <div>123</div>
+    <div>
+      <div class="flex">1</div>
+    </div>
   </main>
 </template>
